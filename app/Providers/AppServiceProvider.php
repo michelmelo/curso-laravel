@@ -2,24 +2,23 @@
 
 namespace App\Providers;
 
-use App\Models\Empresa;
-use App\Policies\EmpresaPolicy;
-use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
+use Illuminate\Support\ServiceProvider;
 
-class AuthServiceProvider extends ServiceProvider
+class AppServiceProvider extends ServiceProvider
 {
     /**
-     * As políticas de autorização do aplicativo.
+     * Register any application services.
      */
-    protected $policies = [
-        Empresa::class => EmpresaPolicy::class,
-    ];
+    public function register(): void
+    {
+        //
+    }
 
     /**
-     * Registre quaisquer serviços de autenticação ou autorização.
+     * Bootstrap any application services.
      */
-    public function boot()
+    public function boot(): void
     {
-        $this->registerPolicies();
+        //
     }
 }
