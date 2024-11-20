@@ -1,6 +1,7 @@
 # Curso Laravel
 
 ## estrutura das pastas
+´´´sh
 .
 ├── README.md
 ├── Untitled-1.yml
@@ -211,7 +212,7 @@
 └── vite.config.js
 
 48 directories, 160 files
-
+´´´
 ## comando basicos
 
 ## Ideias
