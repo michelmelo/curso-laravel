@@ -1,0 +1,26 @@
+
+
+- registo
+  - empresa
+
+- migração 
+  - user
+    - empresa (null)
+
+- modelo
+  - empresas
+    - tabela (model)
+    - migrate
+  - updates
+
+
+
+  php artisan make:model Empresa -m
+
+  php artisan make:migration create_empresas_user_table
+
+  php artisan make:model EmpresasUser
+
+
+  stub
+  stub:publish            Publish all stubs that are available for customization
