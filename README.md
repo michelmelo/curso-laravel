@@ -90,11 +90,6 @@
 ├── package.json
 ├── phpunit.xml
 ├── public
-│   ├── build
-│   │   ├── assets
-│   │   │   ├── app-CrG75o6_.js
-│   │   │   └── app-DqME6eCz.css
-│   │   └── manifest.json
 │   ├── favicon.ico
 │   ├── index.php
 │   └── robots.txt
@@ -142,22 +137,9 @@
 │   │   ├── cache
 │   │   │   └── data
 │   │   ├── sessions
-│   │   │   ├── AHDj7R4Z2OggqUnPAyaHpg4NrbE19v0zxnEtxBjL
-│   │   │   └── Ek2DcRLMYkXduyT5QwQjoNp4bKTa618htcgPcO4s
 │   │   ├── testing
 │   │   └── views
-│   │       ├── 3f8c696f52ba389fe47e8024d645a0b2.php
-│   │       ├── 4f64ab5d669d7ce6c81569068333b124.php
-│   │       ├── 51dc13dd4848c338b80b8e2ee6b8ab62.php
-│   │       ├── 666dd90bbb1cc8168b94e4e37a9a2c8d.php
-│   │       ├── 4316df6acddbb868fefdc04b65e35bf1.php
-│   │       ├── 4648c663ace0e53246f8bff4adc0668b.php
-│   │       ├── a509100d8590d7d6d5b179b408e37faa.php
-│   │       ├── b7b0557a01fc376d857b3d0496170679.php
-│   │       ├── bd4c9506110244fcf569aa61bc0f47a0.php
-│   │       └── db49f9f6d2379de92f465c8d2c37ac4d.php
 │   └── logs
-│       └── laravel.log
 ├── stubs
 │   ├── cast.inbound.stub
 │   ├── cast.stub
