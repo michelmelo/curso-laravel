@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Empresa;
 use Illuminate\Http\Request;
+use App\Mail\NovaEmpresaMailable;
+use Illuminate\Support\Facades\Mail;
 
 class EmpresaController extends Controller
 {
@@ -31,6 +33,9 @@ class EmpresaController extends Controller
         ]);
 
         auth()->user()->empresas()->create($request->all());
+
+        // Envia o e-mail
+    Mail::to(auth()->user()->email)->send(new NovaEmpresaMailable($empresa));
 
         return redirect()->route('empresas.index')->with('success', 'Empresa criada com sucesso!');
     }
