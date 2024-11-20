@@ -32,7 +32,7 @@ class EmpresaController extends Controller
             'ativo' => 'required|boolean',
         ]);
 
-        auth()->user()->empresas()->create($request->all());
+        $empresa = auth()->user()->empresas()->create($request->all());
 
         // Envia o e-mail
     Mail::to(auth()->user()->email)->send(new NovaEmpresaMailable($empresa));
