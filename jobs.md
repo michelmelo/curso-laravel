@@ -156,6 +156,7 @@ No MySQL, você pode configurar quantas vezes um job deve ser tentado antes de f
 
 ```bash
 php artisan queue:work --tries=3
+php artisan queue:restart
 ```
 
 #### Timeout de Processamento:
