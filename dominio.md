@@ -12,15 +12,12 @@ Antes de configurar o Apache, precisamos criar o diretório onde os arquivos do 
 sudo mkdir -p /var/www/meusite.com
 ```
 
-
 ```bash
-git clone git@github.com:michelmelo/curso-laravel.git meusite.com
+git clone https://github.com/michelmelo/curso-laravel.git meusite.com
 sudo chown -R $USER:$USER /var/www/meusite.com
 sudo nano /etc/apache2/sites-available/meusite.com.conf
-nano /var/www/meusite.com/index.html
+composer install
 chmod -R 777 storage/ bootstrap/
-tail -f storage/logs/*
-tail -f /var/log/apache2/curso_michelmelo_pt_error.log
 ```
 
 <VirtualHost *:80>
@@ -156,4 +153,14 @@ Siga as instruções e pronto! 🚀
 
 ---
 
-Agora seu subdomínio está configurado e seguro! Se precisar de ajuda, me avise. 😊
+
+
+
+
+```bash
+git clone https://github.com/michelmelo/curso-laravel.git seunome.michelmelo.pt
+composer install
+
+
+
+```
