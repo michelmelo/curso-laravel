@@ -9,11 +9,8 @@ Aqui está um tutorial passo a passo para criar um subdomínio no servidor Apach
 Antes de configurar o Apache, precisamos criar o diretório onde os arquivos do subdomínio ficarão armazenados.
 
 ```bash
-sudo mkdir -p /var/www/meusite.com
-```
-
-```bash
-git clone https://github.com/michelmelo/curso-laravel.git meusite.com
+sudo mkdir -p /var/www/meusite.com/
+git clone https://github.com/michelmelo/curso-laravel.git .
 sudo chown -R $USER:$USER /var/www/meusite.com
 sudo nano /etc/apache2/sites-available/meusite.com.conf
 composer install
